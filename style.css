@@ -1,0 +1,17 @@
+svg {
+  height: 90vh;
+  width: 100vw;
+  background-color: none;
+}
+path {
+  stroke-dasharray: 2500;
+  animation: draw 2s infinite alternate;
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 2500
+  }
+  to {
+    stroke-dashoffset: 5000;
+  }
+}
